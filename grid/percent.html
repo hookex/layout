@@ -1,0 +1,58 @@
+<!-- 基本网格布局 -->
+
+<meta charset="utf-8">
+
+<style>
+    .row {
+        display: flex;
+    }
+
+
+    .col {
+        background: #ddd;
+        margin: 1vw;
+        padding: 1vw;
+        text-align: center;
+    }
+
+    .w-auto {
+        flex: auto;
+    }
+
+    .w-1 {
+        flex: 0 0 8.3333%;
+    }
+
+    .w-2 {
+        flex: 0 0 16.6667%;
+    }
+
+    .w-3 {
+        flex: 0 0 24.5%;
+    }
+
+    .w-4 {
+        flex: 0 0 33.3333%;
+    }
+</style>
+
+
+<div class="row">
+    <div class="col w-1">1</div>
+    <div class="col w-2">2</div>
+    <div class="col w-auto">auto</div>
+</div>
+
+<div class="row">
+    <div class="col w-2">2</div>
+    <div class="col w-auto">auto</div>
+    <div class="col w-4">4</div>
+</div>
+
+<div class="row">
+    <div class="col w-2">2</div>
+    <div class="col w-4">4</div>
+    <div class="col w-2">2</div>
+    <div class="col w-2">2</div>
+    <div class="col w-2">2</div>
+</div>

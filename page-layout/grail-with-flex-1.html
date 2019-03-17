@@ -1,0 +1,68 @@
+<!-- 使用flex实现 -->
+<!-- 中间宽度固定 -->
+
+<meta charset="utf-8">
+
+<style>
+    html, body {
+        height: 100%;
+    }
+
+    body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        height: 50px;
+        line-height: 50px;
+        background: #369369;
+        text-align: center;
+    }
+
+    section {
+        flex: 1 1 auto;
+        display: flex;
+    }
+
+    section .left {
+        height: 100%;
+        background: cornflowerblue;
+        flex: auto;
+    }
+
+    section .center {
+        background: darkseagreen;
+        height: 100%;
+        width: 800px;
+    }
+
+    section .right {
+        height: 100%;
+        background: cornflowerblue;
+        flex: auto;
+    }
+
+    footer {
+        height: 50px;
+        line-height: 50px;
+        background: darkorange;
+        text-align: center;
+        vertical-align: middle;
+    }
+</style>
+
+<header>
+    页头
+</header>
+
+<section>
+    <div class="left"></div>
+    <div class="center"></div>
+    <div class="right"></div>
+</section>
+
+<footer>
+    页脚
+</footer>
